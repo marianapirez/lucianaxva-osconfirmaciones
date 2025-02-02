@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmar Asistencia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Confirme su asistencia a los quince años de Luciana</h1>
+        <p id="bienvenida">Hola, <span id="nombreInvitado">...</span></p>
+        <p>Tiene disponibles un máximo de <span id="cupos">...</span> lugares.</p>
+        <p>¿Confirma su asistencia?</p>
+        <div class="radio-container">
+            <label class="radio-label">
+                <input type="radio" name="asistencia" value="si"> Sí
+            </label>
+            <label class="radio-label">
+                <input type="radio" name="asistencia" value="no"> No
+            </label>
+        </div>
+        <p>¿Cuántos lugares confirma?</p>
+        <input type="number" id="lugaresConfirmados" min="1" placeholder="1">
+        <button id="confirmarBtn">Enviar</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
